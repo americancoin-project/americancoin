@@ -64,6 +64,7 @@ OBJS= \
     obj/rpcrawtransaction.o \
     obj/script.o \
     obj/scrypt.o \
+    obj/scrypt-sse2.o \
     obj/sync.o \
     obj/util.o \
     obj/wallet.o \
@@ -72,8 +73,8 @@ OBJS= \
 
 all: americancoind.exe
 
-obj/scrypt.o: scrypt.c
-	i586-mingw32msvc-gcc -c $(CFLAGS) -o $@ $^
+#obj/scrypt.o: scrypt.c
+#	i586-mingw32msvc-gcc -c $(CFLAGS) -o $@ $^
 
 obj/build.h: FORCE
 	/bin/sh ../share/genbuild.sh obj/build.h
