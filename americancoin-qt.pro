@@ -15,13 +15,18 @@ CONFIG += no_include_pwd
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
-BOOST_LIB_SUFFIX=-mgw46-mt-sd-1_53
-BOOST_INCLUDE_PATH=C:\deps\boost_1_53_0
-BOOST_LIB_PATH=C:\deps\boost_1_53_0\stage\lib
-BDB_INCLUDE_PATH=c:/deps/db-4.8.30.NC/build_unix
-BDB_LIB_PATH=c:/deps/db-4.8.30.NC/build_unix
-OPENSSL_INCLUDE_PATH=c:/deps/openssl-1.0.1e/include
-OPENSSL_LIB_PATH=c:/deps/openssl-1.0.1e
+#BOOST_LIB_SUFFIX=-mgw46-mt-sd-1_53
+#BOOST_INCLUDE_PATH=C:\deps\boost_1_53_0
+#BOOST_LIB_PATH=C:\deps\boost_1_53_0\stage\lib
+#BDB_INCLUDE_PATH=c:/deps/db-4.8.30.NC/build_unix
+#BDB_LIB_PATH=c:/deps/db-4.8.30.NC/build_unix
+#OPENSSL_INCLUDE_PATH=c:/deps/openssl-1.0.1e/include
+#OPENSSL_LIB_PATH=c:/deps/openssl-1.0.1e
+
+#Force compatible BigNum OpenSSL 1.0.X.
+#Comment this lines if your system has compatible version..
+OPENSSL_INCLUDE_PATH=/usr/local/ssl/include
+OPENSSL_LIB_PATH=/usr/local/ssl/lib
 
 OBJECTS_DIR = build
 MOC_DIR = build
