@@ -1,6 +1,14 @@
+Obsolete version
+=====================================
+
+New at: https://github.com/americancoin-project/americancoin2013
+
+
+
 Web
 =========
 https://bitcointalk.org/index.php?topic=219165.0
+
 https://americancoin-project.github.io/americancoin/
 
 Americancoin, Hell Yea
